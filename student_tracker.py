@@ -3,10 +3,10 @@ print("**----------------------------------**")
 print("STUDENT PROGRESS TRACKER SYSTEM")
 print("**----------------------------------**")           
 print("\n")
-name=input("enter student name              : ")           #ENTER STUDENT NAME
-classname=input("enter class name                :")        #ENTER STUDENT CLASS NAME
-roll_no=input("enter student roll no           :")          #ENTER STUDENT ROLL NO
-subject=int(input("enter how many subject user want:"))     #ENTER HOW MANY SUBJECT USER WANT
+name=input("Enter student name              : ")           #ENTER STUDENT NAME
+classname=input("Enter class name                :")        #ENTER STUDENT CLASS NAME
+roll_no=input("Enter student roll no           :")          #ENTER STUDENT ROLL NO
+subject=int(input("Enter how many subject user want:"))     #ENTER HOW MANY SUBJECT USER WANT
 overall_marks=subject*100
 print("The overall marks for semester:",overall_marks)         #OVERALL MARKS OF SEMESTER
 print("\n")
@@ -39,7 +39,7 @@ def student_details():
                     passed_subject=True
                 break
             else:
-                print("enter a valid subject marks:")
+                print("Enter a valid subject marks:")
                 marks=int(input(f"The subject-{i} marks:"))
                 gets_marks.append(marks)
             break
@@ -61,16 +61,16 @@ def student_details():
  
     print("GRADE CALCULATION:")     
     if average_marks>=90 :            #CHECK THE AVERAGE MARKS GREATER THAN OR EQAUL TO 90
-        print("grade-A")               
+        print("Grade-A")               
     elif average_marks>=75 :             #CHECK THE AVERAGE MARKS GREATER THAN OR EQAUL TO 75
-        print("grade-B")
+        print("Grade-B")
     elif average_marks>=50 :                           #CHECK THE AVERAGE MARKS GREATER THAN OR EQAUL TO 50
                 
-        print("grade-C")
+        print("Grade-C")
     elif average_marks>=35 :             #CHECK THE AVERAGE MARKS GREATER THAN OR EQAUL TO 35
-        print("grade-D")
+        print("Grade-D")
     else: 
-        print("fail")                  #CHECK THE AVERAGE MARKS WILL BE FAIL
+        print("Fail")                  #CHECK THE AVERAGE MARKS WILL BE FAIL
 
     #PASS/FAIL LOGIC
     if failed_subject==True:
@@ -107,14 +107,14 @@ while True:
     print("2. View report again")
     print("3. Exit")
  
-    choice=int (input("enter your chioce between 1/2/3:"))         #CHOOSING THE CHOICE AMOND THE THREE STATEMENT BY USER
+    choice=int (input("Enter your chioce between 1/2/3:"))         #CHOOSING THE CHOICE AMOND THE THREE STATEMENT BY USER
     if choice==1:                                 # IF USER CHOOSE 1 ITS AGAIN ASK  THE SUBJECT MARKS
 
         marks,total_marks,average_marks,gets_marks,marks_percentage,overall_marks,highest_marks,lowest_marks,passed_subject,failed_subject,result=student_details()
     elif choice==2:                                 # IF USER CHOOSE 2 ITS VEIW THE STUDENT REPORT AGAIN
         name,classname,roll_no,total_marks,average_marks,marks_percentage,result=student_report()
     elif choice==3:                                #IF USER CHOOSE THE 3 THE PROGRAM IS EXIT
-        print("exiting.... thank you")
+        print("Exiting.... thank you")
         break
     else:                                #ELSE ASK THE USER VALID ENTER VALUE .......
-        print("enter a valid chioce:")
+        print("Enter a valid chioce:")
