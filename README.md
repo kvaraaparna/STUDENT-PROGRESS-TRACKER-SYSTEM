@@ -20,6 +20,7 @@ The language are using to develop the suatem is Python programming concepts like
 
 
 **##How to run the code**
+
 1.Enter the student details like name,class name,roll no, haow many subjects user want to.
 
 2.Enter marks of each subject and click enter.
