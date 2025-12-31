@@ -21,8 +21,11 @@ The language are using to develop the suatem is Python programming concepts like
 
 **##How to run the code**
 1.Enter the student details like name,class name,roll no, haow many subjects user want to.
+
 2.Enter marks of each subject and click enter.
+
 3.It return the total marks ,average marks,highest marks,lowest marks,marks percentage and grade that the user got in the form of report.
+
 4.After that choose any one the three choices (enter marks again,view report again or exit.
 
 **##Author**
